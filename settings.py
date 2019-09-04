@@ -1,4 +1,4 @@
-class settings():
+class Settings():
     """ Uma classe para armazena todas as configuraç�es da Invassao Alienigena. """
 
     def __init__(self):
