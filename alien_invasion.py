@@ -11,7 +11,7 @@ def run_game():
     pygame.display.set_caption("Alien Invasion")
 
     # cria um espaçonave
-    ship = Ship(screen)
+    ship = Ship(ai_settings,screen)
 
     # Define a cor de fundoencodings
 
