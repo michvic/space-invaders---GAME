@@ -10,13 +10,13 @@ class Ship():
         # Carrega a imagem da espaçonave e obtém seu rect
         self.image = pygame.image.load('images/millennium_falcon.bmp')
         self.rect = self.image.get_rect()
-        self.screen_ret = scrren.get_rect()
+        self.screen_rect = scrren.get_rect()
 
 
 
         # Inicia cada nova espaçonave na parte inferior central da tela
-        self.rect.centerx = self.screen_ret.centerx
-        self.rect.bottom = self.screen_ret.bottom - 5
+        self.rect.centerx = self.screen_rect.centerx
+        self.rect.bottom = self.screen_rect.bottom - 5
 
         # Armazena um valor decimal para o centro da espaçonave
         self.center = float(self.rect.centerx)
@@ -26,9 +26,9 @@ class Ship():
 
     def update(self):
         """Atualizar a posição da espaçonave de acordo com as flags de movimentos"""
-        if self.moving_right:
+        if self.moving_right and self.rect.right < self.screen_rect.right:
             self.center += self.ai_settings.ship_speed_factor
-        if self.moving_left:
+        if self.moving_left and self.rect.left > 0:
             self.center -= self.ai_settings.ship_speed_factor
 
         self.rect.centerx = self.center
