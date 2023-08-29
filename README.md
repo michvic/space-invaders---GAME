@@ -21,5 +21,4 @@
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
+![invaders](https://github.com/michvic/space-invaders---GAME/assets/39414786/a4844fc9-ebae-4da0-9fa6-12c9bb628e8b)
