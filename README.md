@@ -5,17 +5,21 @@
 
 
 ## Installation
+Para instalar e executar o Space Invaders em seu ambiente local, siga estas etapas:
 
-
-
+Windows 
+```bash
+  py -m venv .venv
+  .venv\Scripts\activate
+```
+Linux
 ```bash
   python3 -m venv .venv
   source .venv/bin/activate
-  pip3 install -r requirements.txt
+```
 
-  // windows
-  py -m venv .venv
-  .venv\Scripts\activate
+```bash
+  pip3 install -r requirements.txt
 ```
     
 ## Authors
